@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+     <div class="flex justify-center items-center mt-36">
+  <img src="gif-poke.gif.png" alt="" />
+</div>
+
+<div class="max-w-[85%] mx-auto flex justify-start mt-12 mb-[40px] gap-3">
+  <input type="text" id="input" class="input w-[209px] h-[36px] text-[#6C757D] font-normal text-[16px] bg-white rounded-[6px]" placeholder="Введите имя покемона..." />
+      <button id="it" class=" text-black w-[209px] h-[36px]  font-normal text-[16px] bg-white rounded-[6px]">A-Z</button>
+      <button id="itvacha" class=" text-black w-[209px] h-[36px]  font-normal text-[16px] bg-white rounded-[6px]">Z-A</button>
+            <details class="dropdown">
+        <summary class="btn m-1 bg-white w-[209px] text-black h-[39px]  rounded items-center flex justify-center">All</summary>
+<ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-600 p-2 shadow-sm w-[225px] absolute bg-white rounded-lg ">
+  <li class="w-[209px] rounded text-white bg-black mb-1">
+    <button data-type="Fire">Fire</button>
+  </li>
+  <li class="w-[209px] rounded text-white bg-black mb-1">
+    <button data-type="Ice">Ice</button>
+  </li>
+  <li class="w-[209px] rounded text-white bg-black mb-1">
+    <button data-type="Flying">Flying</button>
+  </li>
+  <li class="w-[209px] rounded text-white bg-black mb-1">
+    <button data-type="Psychic">Psychic</button>
+  </li>
+  <li class="w-[209px] rounded text-white bg-black mb-1">
+    <button data-type="Rock">Rock</button>
+  </li>
+  <li class="w-[209px] rounded text-white bg-black">
+    <button data-type="Ground">Ground</button>
+  </li>
+</ul>
+      </details>
+</div>
+
+<div class="flex flex-wrap gap-[9px] justify-center" id="wrapper"></div>
+
+<script type="module" src="./pokemons.js"></script>
+<script type="module" src="./main.js"></script>
+
+
+</body>
+
+</html>
